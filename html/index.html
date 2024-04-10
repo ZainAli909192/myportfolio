@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../Zain AliCv .pdf"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+    <!-- cards css  -->
+    <link rel="stylesheet" href="../css/cards.css">
+
+
+  </head>
+  <body> 
+    <nav id="nav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Zain  Ali</label>
+      <ul>  
+        <li ><a class="active" href="#">About me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <!-- About section -->
+    <section class="about-section">
+        <div class="container">
+          
+          <div class="about-image"> 
+            <img src="../img/profile.jpg" alt="Profile Image">
+          </div>
+          <div class="about-content">
+            <p>
+                I am a dedicated and enthusiastic web developer 
+                passionate about creating engaging
+                 and user-friendly digital experiences.
+                  With a strong foundation in  
+                
+                <span id="typing-text"></span>
+
+              </p>
+
+            
+          <div>
+            <button class="button" id="downloadBtn" >Download CV</button>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects  -->
+      <div class="projects" id="projects">
+  <hr>
+  <p>Projects</p>
+  <div class="card-list"> 
+    <a href="#" class="card-item">
+        <img src="../img/profile.jpg" alt="Card Image">
+        <span class="developer">Project language</span>
+        <h4>Title.</h4>
+        <div class="arrow">
+            Details
+        </div>
+    </a>
+    <a href="#" class="card-item">
+        <img src="../img/profile.jpg" alt="Card Image">
+        <!-- <img src="images/designer.jpg" alt="Card Image"> -->
+        <span class="designer">Designer</span>
+        <h3>A "designer" is a design expert.</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+    <a href="#" class="card-item">
+        <!-- <img src="images/editor.jpg" alt="Card Image"> -->
+        <img src="../img/bg12.jpeg" alt="Card Image">
+        <span class="editor">Editor</span>
+        <h3>An "editor" ensures content quality and accuracy.</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+    <a href="#" class="card-item">
+        <!-- <img src="images/editor.jpg" alt="Card Image"> -->
+        <img src="../img/bg12.jpeg" alt="Card Image">
+        <span class="editor">Editor</span>
+        <h3>An "editor" ensures content quality and accuracy.</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+</div>
+</div>
+
+  <!-- Services  -->
+  <div class="projects" id="services">
+    <hr>
+    <p>Services</p>
+    <div class="card-list"> 
+      <a href="#" class="card-item">  
+          <img src="../img/profile.jpg" alt="Card Image">
+          <span class="">Project language</span>
+          <h4>Web development.</h4>
+          <div class="arrow"> 
+              Details
+          </div>
+      </a> 
+      <a href="#" class="card-item">  
+          <img src="../img/profile.jpg" alt="Card Image">
+          <span class="">Project language</span>
+          <h4>Web development.</h4>
+          <div class="arrow"> 
+              Details
+          </div>
+      </a>
+      <a href="#" class="card-item">
+          <img src="../img/profile.jpg" alt="Card Image">
+          <!-- <img src="images/designer.jpg" alt="Card Image"> -->
+          <span class="">Designer</span>
+          <h3>A "designer" is a design expert.</h3>
+          <div class="arrow"> 
+              <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+      </a>
+      <a href="#" class="card-item">
+          <!-- <img src="images/editor.jpg" alt="Card Image"> -->
+          <img src="../img/bg12.jpeg" alt="Card Image">
+          <span class="editor">Editor</span>
+          <h3>An "editor" ensures content quality and accuracy.</h3>
+          <div class="arrow">
+              <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+      </a>
+      <a href="#" class="card-item">
+          <!-- <img src="images/editor.jpg" alt="Card Image"> -->
+          <img src="../img/bg12.jpeg" alt="Card Image">
+          <span class="editor">Editor</span>
+          <h3>An "editor" ensures content quality and accuracy.</h3>
+          <div class="arrow">
+              <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+      </a>
+  </div>
+  </div>
+  <hr>
+
+  <!-- contact form  -->
+      <main id="contact"> 
+        <h4 >Contact us</h4> 
+      <div class="contact-box">
+        
+        <div class="social-media">
+        <b>  Social media </b>
+          <div>
+            <a href="https://wa.me/923250679080">
+              <img src="../img/whatsapp.png" alt="WhatsApp">
+            </a>
+            
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/zainali36" target="_blank">
+              <img src="../img/linkdin.png" alt="LinkedIn">
+            </a>
+                      </div>
+          <div>
+
+            <a href="https://github.com/zainali909192" target="_blank">
+              <img src="../img/github.png" alt="LinkedIn">
+            </a>          </div>
+        </div>
+    <form id="noteForm" onsubmit="return validateForm()">
+      <label for="author">Name:</label>
+      <input type="text" id="author" name="author">
+      <span id="authorError" class="error"></span>
+    
+      <label id="purposeLabel3" for="purpose">Email:</label>
+      <input type="email" id="purpose3" name="purpose" >
+      <span id="purposeError" class="error"></span>
+      
+      <label for="title">Message:</label>
+      <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+      <span id="notesError" class="error"></span>
+    
+
+      <input type="submit" value="Send message">
+    </form>
+    
+  </div>  
+      </main>
+
+      <!-- footer  -->
+      <footer>
+        <div >
+          <p> &copy; 2024 All rights reserved.</p>
+        </div>
+      </footer>
+  </body>
+</html>
+
+
+<!-- download button script  -->
+<script>
+  // Function to handle the download
+function downloadFile() {
+// Set the file URL
+var fileURL = "../Zain AliCv .pdf"; // Replace with your file URL
+
+// Create a link element
+var link = document.createElement('a');
+
+// Set the link's attributes
+link.href = fileURL;
+link.download = 'downloaded_file.pdf'; // Change the file name as needed
+
+// Append the link to the document body
+document.body.appendChild(link);
+
+// Trigger the click event on the link
+link.click();
+
+// Remove the link from the document body
+document.body.removeChild(link);
+}
+
+// Add event listener to the download button
+document.getElementById('downloadBtn').addEventListener('click', downloadFile);
+
+
+const strings = ["ReactJS","ExpressJS","NodeJS","Mongodb","TailwindCSS","Php","Python","CSS", "JS",];
+const typingSpeed = 200; // Speed in milliseconds
+
+const pauseDuration = 1000; // Pause duration in milliseconds
+const clearDelay = 1000;
+
+let stringIndex = 0; 
+let charIndex = 0;
+
+function type() {
+  const text = strings[stringIndex];
+  if (charIndex < text.length) {
+    document.getElementById('typing-text').textContent += text.charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    // Move to the next string in the array or loop back to the beginning if at the end
+    stringIndex = (stringIndex + 1) % strings.length;
+    charIndex = 0;
+    // setTimeout(type, pauseDuration);
+    setTimeout(clearText, clearDelay); // Clear the text after 2 seconds
+
+  }
+}
+
+function clearText() {
+  document.getElementById('typing-text').textContent = ''; // Clear the text
+  setTimeout(type, pauseDuration); // Pause for 1 second after clearing the text
+}
+
+
+document.addEventListener('DOMContentLoaded', type);
+
+</script>
