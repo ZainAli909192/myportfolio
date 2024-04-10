@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zain Ali</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <!-- <link rel="stylesheet" href="../Zain AliCv .pdf"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+    <!-- cards css  -->
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+  </head>
+  <body> 
+
+
+
+<div class="popup-screen">
+        <div class="popup-box">
+            <!-- <i class="fas fa-times close-btn"></i> -->
+            <img src="../img/tick.png" height="45px" alt="">
+         
+            <p class="mesg">
+                
+            </p>
+            <button class=" butt close-btn">Ok</button>
+            <!-- <a href="#" class="btn close-btn">Ok</a> -->
+        </div>
+  </div>
+  <nav id="nav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Zain  Ali</label>
+      <ul>  
+        <li ><a class="active" onclick="closeNavbar()" href="#">About me</a></li>
+        <li ><a  onclick="closeNavbar()" href="#Projects">Projects</a></li>
+        <li ><a  onclick="closeNavbar()" href="#Certificates">Certificates</a></li>
+        <li ><a  onclick="closeNavbar()" href="#Services">Services</a></li>
+        <li><a href="#contact" onclick="closeNavbar()">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <!-- About section -->
+    <section class="about-section">
+        <div class="container">
+          
+          <div class="about-image"> 
+            <img src="../img/profile.jpg" class="animate-left" alt="Profile Image">
+          </div>
+          <div class="about-content">
+            <p class="animate-right">
+             
+As a devoted and energized web developer, my focus is on crafting compelling and user-friendly digital interfaces. 
+Grounded in a solid understanding of
+                   <!-- <br>  -->
+                
+                <span id="typing-text"></span>
+
+              </p>
+
+             
+          <div>
+            <button class=" animate-right button" id="downloadBtn" >Download CV</button>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- projects  -->
+ 
+        <div class="projects" id="Projects">
+            <hr>
+            <p> Projects</p>
+            <div class="card-list">
+             <a href="./shopping-project.html" class="card-item animate-left">
+               <img src="../img/projects/p1s4.png" alt="Card Image" >
+               <h5> Shopping website </h5>
+              <div class="arrow">Details</div>
+                </a>
+                <a href="limetray.html" class="card-item animate-left">
+                  <img src="../img/projects/p4s1.jpg" alt="Card Image" >
+                  <h5> Notes taking website </h5>
+                 <div class="arrow">Details</div>
+                </a>
+                <a href="notes-taking.html" class="card-item animate-left">
+                  <img src="../img/projects/p3s1.png" alt="Card Image" >
+                  <h5> Notes taking website </h5>
+                 <div class="arrow">Details</div>
+                   </a>
+                
+             <a href="login-form.html" class="card-item animate-left">
+               <img src="../img/projects/p2.png" alt="Card Image" >
+               <h5> Login form </h5>
+              <div class="arrow">Details</div>
+                </a>
+                
+            </div>
+        </div> 
+        
+<!-- Certificates Section -->
+        <div class="projects" id="Certificates">
+            <hr>
+            <p>Certificates</p>
+            <div class="card-list">
+                <a href="./react-cert.html" class="card-item animate-right">
+                <img src="../img/certificates/reactjs_page-0001.jpg" alt="Certificate Image">
+                <h5>ReactJS</h5>
+                <div class="arrow">View</div>
+                </a>
+
+                <a href="nodejs-cert.html" class="card-item animate-right">
+                <img src="../img/certificates/nodejs_page-0001.jpg" alt="Certificate Image">
+                <h5>Nodejs developer</h5>
+                <div class="arrow">View</div>
+                </a>
+       
+                <a href="mongodb-cert.html" class="card-item animate-right">
+                <img src="../img/certificates/mongodb_page_0001.jpg" alt="Certificate Image">
+                <h5>Mongodb administration</h5>
+                <div class="arrow">View</div>
+                </a>
+       
+                <a href="php-cert.html" class="card-item animate-right">'
+                <img src="../img/certificates/php_page-0001.jpg" alt="Certificate Image">
+                <h5>Php</h5>
+                <div class="arrow">View</div>
+                </a>
+        </div>
+    </div> 
+    
+
+        <!-- Services  -->
+        <div class="projects" id="Services">
+            <hr>
+            <p>Services</p>
+            <div class="card-list">
+                <a href="#contact" class="card-item">
+                <img src="../img/services/html.jpg" alt="Card Image">
+                <h5>HTML5 CSS3 JS</h5>
+                <div class="arrow">Get service</div>
+                </a>
+         
+                <a href="#contact" class="card-item">
+                <img src="../img/services/jquery.png" alt="Card Image">
+                <h5>Jquery</h5>
+                <div class="arrow">Get service</div>
+                </a>
+
+                <a href="#contact" class="card-item">
+                <img src="../img/services/t.jpeg" alt="Card Image">
+                <h5>TailwindCSS</h5>
+                <div class="arrow">Get service</div>
+                </a>
+
+                <a href="#contact" class="card-item">
+                <img src="../img/services/php.png" alt="Card Image">
+                <h5>Php developer</h5>
+                <div class="arrow">Get service</div>
+                </a>
+
+                <a href="#contact" class="card-item">
+                <img src="../img/services/reactjs.jpeg" alt="Card Image">
+                <h5>ReactJS development</h5>
+                <div class="arrow">Get service</div>
+                </a>
+
+                <a href="#contact" class="card-item">
+                <img src="../img/services/node.jpeg" alt="Card Image">
+                <h5>Nodejs development</h5>
+                <div class="arrow">Get service</div>
+                </a>
+                
+                <a href="#contact" class="card-item">
+                <img src="../img/services/ex.jpeg" alt="Card Image">
+                <h5>Expressjs development</h5>
+                <div class="arrow">Get service</div>
+                </a>
+                
+                <a href="#contact" class="card-item">
+                <img src="../img/services/mysql.png" alt="Card Image">
+                <h5>Mysql</h5>
+                <div class="arrow">Get service</div>
+                </a>
+                
+                <a href="#contact" class="card-item">
+                <img src="../img/services/mong.png" alt="Card Image">
+                <h5>Mongodb</h5>
+                <div class="arrow">Get service</div>
+                </a>
+                <a href="#contact" class="card-item">
+                <img src="../img/services/um.jpeg" alt="Card Image">
+                <h5>UML diagrams</h5>
+                <div class="arrow">Get service</div>
+                </a>
+            </div>
+        </div>
+        
+<hr>
+
+<script>
+
+const popupScreen = document.querySelector(".popup-screen");
+        const popupBox = document.querySelector(".popup-box");
+        const closeBtn = document.querySelector(".close-btn");
+        const btn = document.querySelector(".butt");
+        const mesg = document.querySelector(".mesg");
+
+        function showpopup(message){
+              
+          setTimeout(() => {
+            mesg.textContent=message;
+                    popupScreen.classList.add("activate");
+                }, 1000); //Popup the screen in 02 seconds after the page is loaded.       
+              
+                closeBtn.addEventListener("click", () => {
+                    popupScreen.classList.remove("activate"); //Close the popup screen on click the close button.
+                });
+              
+          setTimeout(() => {
+                    popupScreen.classList.remove("activate"); //Close the popup screen on click the close button.
+                }, 3000); //Popup the screen in 02 seconds after the page is loaded.
+        }
+
+</script>
+
+  </div>  
+      </main>
+
+      <!-- footer  -->
+      <footer id="contact"  >
+      
+          <p > &copy; 2024 All rights reserved. 
+            </p>
+            <p class="social-media">
+            <a href="https://wa.me/923250679080" target="_blank">
+              <img src="../img/whatsapp.png" alt="WhatsApp">
+            </a>
+        
+            <a href="https://www.linkedin.com/in/zainali36" target="_blank">
+              <img class="git"  src="../img/linkdin.png" alt="LinkedIn">
+            </a>
+         
+
+            <a href="https://github.com/zainali909192" target="_blank">
+              <img class="git" src="../img/github.png" alt="LinkedIn">
+            </a>   
+     </p>
+       
+      </footer>
+
+     
+  </body>
+</html>
+
+<!-- download button script  -->
+
+<!-- Loader container -->
+<div class="loader-container" id="loaderContainer">
+    <!-- Loader image -->
+    <img src="../img/loader.svg" alt="Loader" class="loader-img">
+  </div>  
+  
+  <script>
+    function showloader(){
+  // Get the loader container element
+  var loaderContainer = document.getElementById('loaderContainer');
+      // Display the loader container
+      loaderContainer.style.display = 'block';
+  
+      // Hide the loader after 2 seconds
+      setTimeout(function() {
+        // Hide the loader container
+        loaderContainer.style.display = 'none';
+      }, 900);
+    
+    } ;
+    window.onload=showloader();
+    </script>
+
+<script>
+function downloadCV() {
+
+    showloader();
+    // Set the file URL dynamically from PHP
+   setTimeout(() => {
+     var fileURL = "../cv.pdf"; // File URL retrieved from the database
+    // var fileURL = "../Zain AliCV.pdf"; // File URL retrieved from the database
+  // alert( "err")
+    // Check if the file URL is not empty
+    if (fileURL !== "") {
+      showpopup("My Cv is downloaded...");
+        // Create a link element
+        var link = document.createElement('a');
+        // Set the link's attributes
+        link.href = fileURL;
+        link.download = 'cv.pdf'; // Change the file name as needed
+
+        // Append the link to the document body
+        document.body.appendChild(link);
+
+        // Trigger the click event on the link
+        link.click();
+
+        // Remove the link from the document body
+        document.body.removeChild(link);
+      } else {
+        // Handle the case when the CV path is empty (e.g., display an error message)
+        alert("CV file not found.");
+    }
+   }, 2000);
+  }
+  
+  
+
+document.getElementById('downloadBtn').addEventListener('click', downloadCV);
+
+const strings = ["ReactJS","ExpressJS","NodeJS","Mongodb","TailwindCSS","Php","Python","CSS", "JS",];
+const typingSpeed = 200; // Speed in milliseconds
+
+const pauseDuration = 1000; // Pause duration in milliseconds
+const clearDelay = 1000;
+
+let stringIndex = 0; 
+let charIndex = 0;
+
+function type() {
+  const text = strings[stringIndex];
+  if (charIndex < text.length) {
+    document.getElementById('typing-text').textContent += text.charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    // Move to the next string in the array or loop back to the beginning if at the end
+    stringIndex = (stringIndex + 1) % strings.length;
+    charIndex = 0;
+    // setTimeout(type, pauseDuration);
+    setTimeout(clearText, clearDelay); // Clear the text after 2 seconds
+
+  }
+}
+
+function clearText() {
+  document.getElementById('typing-text').textContent = ''; // Clear the text
+  setTimeout(type, pauseDuration); // Pause for 1 second after clearing the text
+}
+
+
+document.addEventListener('DOMContentLoaded', type);
+
+window.addEventListener('scroll', revealOnScroll);
+
+function revealOnScroll() {
+  var revealElements = document.querySelectorAll('.card-item');
+  for (var i = 0; i < revealElements.length; i++) {
+    var revealElement = revealElements[i];
+    var revealPosition = revealElement.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+    if (revealPosition < windowHeight) {
+      revealElement.classList.add('animate-right');
+    } else if (revealPosition > windowHeight) {
+      revealElement.classList.remove('animate-right');
+    }
+  }
+}
+
+// Call revealOnScroll when the page loads
+document.addEventListener('DOMContentLoaded', revealOnScroll);
+
+// Call revealOnScroll when the user scrolls the page
+window.addEventListener('scroll', revealOnScroll);
+
+
+
+function closeNavbar() {
+      document.getElementById('check').checked = false;
+    }
+
+  // Define a flag variable to track whether the redirection has occurred
+// let redirectOccured = true;
+// Check if the redirect has occurred before
+
+// });     
+// setTimeout(() => {
+  
+//   sessionStorage.setItem('redirectOccured', false);
+
+// }, 4000);
+</script>
