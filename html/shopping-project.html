@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <!-- <link rel="stylesheet" href="../Zain AliCv .pdf"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- cards css  -->
+
+
+  </head>
+  <body> 
+
+<!-- Loader container -->
+<div class="loader-container" id="loaderContainer">
+  <!-- Loader image -->
+  <img src="../img/loader.svg" alt="Loader" class="loader-img">
+</div>  
+
+
+<script>
+  function showloader(){
+// Get the loader container element
+var loaderContainer = document.getElementById('loaderContainer');
+    // Display the loader container
+    loaderContainer.style.display = 'block';
+
+    // Hide the loader after 2 seconds
+    setTimeout(function() {
+      // Hide the loader container
+      loaderContainer.style.display = 'none';
+    }, 2000);
+  
+  } ;
+  window.onload=showloader();
+  </script>
+
+    <nav id="nav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo-img">
+
+      <img src="../img/profile.jpg" class="logo-img"/>
+      </label>
+      <ul>  
+        <li ><a class="active" href="index.html">About me</a></li>
+        <li><a onclick="closeNavbar()" href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+      
+    <div class="projects animate-left cert" id="Projects">';
+    <div class="cont">
+
+      <h3>Name: Shopping websit </h3>
+        <br>
+        <b>  Main modules:
+          <ol type="1">
+            <li> 1. Search products through voice</li>
+            <li> 2. Listen product details</li>
+            <li> 3. Fill order form through voice</li>
+            <li> 4. Add products into cart through voice</li>
+          </ol>
+        </b>
+      </div>
+      <img id="projectImage" src="../img/projects/p1s0.png" alt="">
+    </div>
+    
+    <script>
+        // Define an array of image paths
+        var images = [
+            "../img/projects/p1s0.png",
+            "../img/projects/p1s2.png",
+            "../img/projects/p1s3.png",
+            "../img/projects/p1s4.png"
+            // Add more image paths as needed
+        ];
+    
+        // Initialize index to 0
+        var index = 0;
+    
+        // Function to change the image
+        function changeImage() {
+            // Update the src attribute of the img element
+            document.getElementById("projectImage").src = images[index];
+            
+            // Increment index and reset if it exceeds the length of the array
+            index = (index + 1) % images.length;
+        }
+    
+        // Call the changeImage function every 1 seconds
+        setInterval(changeImage, 1000);
+    </script>
+
+<hr>
+
+      <!-- footer  -->
+      <footer id="contact"  >
+      
+        <p > &copy; 2024 All rights reserved. 
+          </p>
+          <p class="social-media">
+          <a href="https://wa.me/923250679080" target="_blank">
+            <img src="../img/whatsapp.png" alt="WhatsApp">
+          </a>
+      
+          <a href="https://www.linkedin.com/in/zainali36" target="_blank">
+            <img class="git"  src="../img/linkdin.png" alt="LinkedIn">
+          </a>
+       
+
+          <a href="https://github.com/zainali909192" target="_blank">
+            <img class="git" src="../img/github.png" alt="LinkedIn">
+          </a>   
+   </p>
+     
+    </footer>
+  </body>
+</html>
+
+
+
+<!-- download button script  -->
+<script>
+  // Function to handle the download
+function downloadFile() {
+// Set the file URL
+var fileURL = "../Zain AliCv .pdf"; // Replace with your file URL
+
+// Create a link element
+var link = document.createElement('a');
+
+// Set the link's attributes
+link.href = fileURL;
+link.download = 'downloaded_file.pdf'; // Change the file name as needed
+
+// Append the link to the document body
+document.body.appendChild(link);
+
+// Trigger the click event on the link
+link.click();
+
+// Remove the link from the document body
+document.body.removeChild(link);
+}
+
+// Add event listener to the download button
+document.getElementById('downloadBtn').addEventListener('click', downloadFile);
+
+
+const strings = ["ReactJS","ExpressJS","NodeJS","Mongodb","TailwindCSS","Php","Python","CSS", "JS",];
+const typingSpeed = 200; // Speed in milliseconds
+
+const pauseDuration = 1000; // Pause duration in milliseconds
+const clearDelay = 1000;
+
+let stringIndex = 0; 
+let charIndex = 0;
+
+function type() {
+  const text = strings[stringIndex];
+  if (charIndex < text.length) {
+    document.getElementById('typing-text').textContent += text.charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    // Move to the next string in the array or loop back to the beginning if at the end
+    stringIndex = (stringIndex + 1) % strings.length;
+    charIndex = 0;
+    // setTimeout(type, pauseDuration);
+    setTimeout(clearText, clearDelay); // Clear the text after 2 seconds
+
+  }
+}
+
+function clearText() {
+  document.getElementById('typing-text').textContent = ''; // Clear the text
+  setTimeout(type, pauseDuration); // Pause for 1 second after clearing the text
+}
+
+
+document.addEventListener('DOMContentLoaded', type);
+
+window.addEventListener('scroll', revealOnScroll);
+
+function revealOnScroll() {
+  var revealElements = document.querySelectorAll('.card-item');
+  for (var i = 0; i < revealElements.length; i++) {
+    var revealElement = revealElements[i];
+    var revealPosition = revealElement.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+    if (revealPosition < windowHeight) {
+      revealElement.classList.add('reveal');
+    }
+  }
+
+}
+function closeNavbar() {
+      document.getElementById('check').checked = false;
+    }
+
+    const slider = document.querySelector('.image-slider');
+  let slideIndex = 0;
+
+  // Function to move to the next slide
+  function nextSlide() {
+    slideIndex++;
+    if (slideIndex === slider.children.length) {
+      slideIndex = 0;
+    }
+    updateSlider();
+  }
+
+  // Function to update slider position
+  function updateSlider() {
+    slider.style.left = `-${slideIndex * 100}%`;
+  }
+
+  // Automatic slide interval
+  setInterval(nextSlide, 1000); // Change slide every 3 seconds
+
+</script>
