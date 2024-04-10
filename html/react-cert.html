@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Certificate detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <!-- <link rel="stylesheet" href="../Zain AliCv .pdf"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- cards css  -->
+
+
+  </head>
+  <body> 
+    <!-- Loader container -->
+    <div class="loader-container" id="loaderContainer">
+        <!-- Loader image -->
+        <img src="../img/loader.svg" alt="Loader" class="loader-img">
+      </div>  
+      
+      
+      <script>
+        function showloader(){
+      // Get the loader container element
+      var loaderContainer = document.getElementById('loaderContainer');
+          // Display the loader container
+          loaderContainer.style.display = 'block';
+      
+          // Hide the loader after 2 seconds
+          setTimeout(function() {
+            // Hide the loader container
+            loaderContainer.style.display = 'none';
+          }, 900);
+        
+        } ;
+        window.onload=showloader();
+        </script>
+    <nav id="nav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo-img">
+
+      <img src="../img/profile.jpg" class="logo-img"/>
+      </label>
+      <ul>  
+        <li ><a class="active" href="index.html">Home</a></li>
+        <li><a onclick="closeNavbar()" href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+      <div class="projects  animate-left cert" id="Projects">
+        <div class="cont">
+
+          <h3>Certificate Name: Reactjs  </h3>
+          <p>  Date:  24-Oct-2022  </p>
+          <p class= "cer">Institute: Simplilearn </p>
+          
+          
+        </div>
+        
+        <img src="../img/certificates/reactjs_page-0001.jpg" alt="Project Image" >
+      </div>
+        
+        <hr>
+        
+          <!-- footer  -->
+          <footer id="contact"  >
+      
+            <p > &copy; 2024 All rights reserved. 
+              </p>
+              <p class="social-media">
+              <a href="https://wa.me/923250679080" target="_blank">
+                <img src="../img/whatsapp.png" alt="WhatsApp">
+              </a>
+          
+              <a href="https://www.linkedin.com/in/zainali36" target="_blank">
+                <img class="git"  src="../img/linkdin.png" alt="LinkedIn">
+              </a>
+           
+  
+              <a href="https://github.com/zainali909192" target="_blank">
+                <img class="git" src="../img/github.png" alt="LinkedIn">
+              </a>   
+       </p>
+         
+        </footer>
+  </body>
+</html>
+
+
+
+<!-- download button script  -->
+<script>
+
+
+
+window.addEventListener('scroll', revealOnScroll);
+
+function revealOnScroll() {
+  var revealElements = document.querySelectorAll('.card-item');
+  for (var i = 0; i < revealElements.length; i++) {
+    var revealElement = revealElements[i];
+    var revealPosition = revealElement.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+    if (revealPosition < windowHeight) {
+      revealElement.classList.add('reveal');
+    }
+  }
+
+}
+function closeNavbar() {
+      document.getElementById('check').checked = false;
+    }
+
+</script>
